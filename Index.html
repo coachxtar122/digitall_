@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Xtar Digital Hub | Learn • Earn • Grow</title>
+
+    <meta name="description"
+          content="Welcome to Xtar Digital Hub. Explore digital skills including affiliate marketing, online surveys, ghostwriting, and cyber friend opportunities.">
+
+    <style>
+        /* GENERAL STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8fc;
+            color: #29202d;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* HEADER */
+        header {
+            background: #ffffff;
+            padding: 18px 0;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            color: #a020a0;
+        }
+
+        .logo span {
+            color: #ed4f9b;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #29202d;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d63384;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #38104d, #8e248f, #e94f9b);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 6vw, 55px);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #ffd5eb;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            font-size: 17px;
+        }
+
+        .tagline {
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 23px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: #ffffff;
+        }
+
+        .btn-telegram {
+            background: #ffffff;
+            color: #2677c9;
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            padding: 75px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #8e248f;
+            font-size: 32px;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: #625667;
+        }
+
+        /* PRODUCTS */
+        .products {
+            background: #ffffff;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: #fff8fc;
+            padding: 30px 24px;
+            border-radius: 18px;
+            text-align: center;
+            border: 1px solid #f5d8eb;
+            box-shadow: 0 5px 18px rgba(80, 25, 80, 0.05);
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(80, 25, 80, 0.1);
+        }
+
+        .product-icon {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .product-card h3 {
+            color: #8e248f;
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .product-card p {
+            color: #625667;
+            font-size: 15px;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            background: #fceaf5;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about-content h2 {
+            color: #8e248f;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+        }
+
+        .coach-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #a020a0;
+            margin-top: 20px;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            text-align: center;
+            background: #ffffff;
+        }
+
+        .contact h2 {
+            color: #8e248f;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            max-width: 650px;
+            margin: auto;
+            color: #625667;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #28102f;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: #ff9dcc;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 650px) {
+            .navbar {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 14px;
+            }
+
+            .hero {
+                padding: 75px 15px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+
+            .section-title,
+            .about-content h2,
+            .contact h2 {
+                font-size: 27px;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                XTAR <span>Digital Hub</span>
+            </a>
+
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Digital Skills</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HERO / HOME SECTION -->
+    <section class="hero" id="home">
+        <div class="container">
+
+            <p class="tagline">LEARN • EARN • GROW</p>
+
+            <h1>
+                Welcome to <span>Xtar Digital Hub</span>
+            </h1>
+
+            <p>
+                Welcome to my world 🌎! Discover digital skills and online
+                opportunities, learn at your own pace, and take practical
+                steps towards your personal and professional growth.
+            </p>
+
+            <p>
+                Your journey starts with learning. Your progress comes
+                through practice, patience, and consistency.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    href="https://wa.me/message/47MDVQGZ5KCLI1"
+                    class="btn btn-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Chat Me Up on WhatsApp
+                </a>
+
+                <a
+                    href="https://t.me/Coahxtar"
+                    class="btn btn-telegram"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Message Me on Telegram
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- DIGITAL SKILLS SECTION -->
+    <section class="products" id="products">
+        <div class="container">
+
+            <h2 class="section-title">Explore Our Digital Skills</h2>
+
+            <p class="section-intro">
+                Discover different digital learning opportunities and
+                explore the option that best matches your interests,
+                abilities, and goals.
+            </p>
+
+            <div class="product-grid">
+
+                <!-- AFFILIATE MARKETING -->
+                <div class="product-card">
+                    <div class="product-icon">📱</div>
+
+                    <h3>Affiliate Marketing</h3>
+
+                    <p>
+                        Learn how affiliate marketing works, how to promote
+                        products or services, and how commissions may be
+                        earned through qualifying referrals.
+                    </p>
+                </div>
+
+
+                <!-- ONLINE SURVEYS -->
+                <div class="product-card">
+                    <div class="product-icon">📊</div>
+
+                    <h3>Online Surveys</h3>
+
+                    <p>
+                        Explore online survey platforms, understand their
+                        requirements, and learn how participation and
+                        rewards work on different platforms.
+                    </p>
+                </div>
+
+
+                <!-- GHOSTWRITING -->
+                <div class="product-card">
+                    <div class="product-icon">✍️</div>
+
+                    <h3>Ghostwriting</h3>
+
+                    <p>
+                        Develop your writing skills and learn how to create
+                        content for clients who need help expressing their
+                        ideas through written work.
+                    </p>
+                </div>
+
+
+                <!-- CYBER FRIEND -->
+                <div class="product-card">
+                    <div class="product-icon">💬</div>
+
+                    <h3>Cyber Friend</h3>
+
+                    <p>
+                        Learn about online conversation-based opportunities,
+                        communication skills, and the importance of privacy
+                        and safety when interacting online.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container about-content">
+
+            <h2>About Xtar Digital Hub</h2>
+
+            <p>
+                Xtar Digital Hub is a digital learning space created to
+                introduce people to online skills and digital opportunities.
+            </p>
+
+            <p>
+                My goal is to help learners understand their options,
+                develop useful skills, and take informed steps towards
+                their goals.
+            </p>
+
+            <p>
+                Every journey begins with a decision to learn. With the
+                right guidance, practice, and consistency, you can continue
+                improving your digital knowledge.
+            </p>
+
+            <p class="coach-name">Coach Esther 💜</p>
+
+            <p><strong>Welcome to my world 🌎</strong></p>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+
+            <h2>Let's Connect!</h2>
+
+            <p>
+                Have questions about any of the digital skills listed here?
+                Feel free to explore the website and learn more about the
+                opportunities that interest you.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+
+            <p>
+                &copy; 2026 <span>Xtar Digital Hub</span>.
+                All rights reserved.
+            </p>
+
+            <p>Learn • Earn • Grow 💜</p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
